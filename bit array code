@@ -1,0 +1,21 @@
+#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main() {
+    bitset<8> bits;  
+    
+    bits[0] = 1; 
+    bits[3] = 1;  
+    
+    cout << "Bit Array: " << bits << endl;
+
+    bits.flip(3);  
+    cout << "After flipping 4th bit: " << bits << endl;
+
+    cout << "Number of 1s: " << bits.count() << endl;
+
+    cout << "Bit at index 0: " << bits[0] << endl;
+
+    return 0;
+}
